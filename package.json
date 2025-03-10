@@ -1,0 +1,23 @@
+{
+  "name": "fast-feet-domain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^9.4.0",
+    "@rocketseat/eslint-config": "^2.2.2",
+    "@types/node": "^22.10.10",
+    "@vitest/coverage-v8": "^3.0.4",
+    "eslint": "8",
+    "typescript": "^5.7.3",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.0.4"
+  }
+}
