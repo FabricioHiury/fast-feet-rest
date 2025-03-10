@@ -6,13 +6,7 @@ FastFeet is a fictional carrier service designed to manage the full lifecycle of
 1. [Overview](#overview)
 2. [Features](#features)
 3. [Project Structure](#project-structure)
-4. [Installation](#installation)
-5. [Usage](#usage)
-6. [Environment Variables](#environment-variables)
-7. [API Endpoints](#api-endpoints)
-8. [Technologies](#technologies)
-9. [Contributing](#contributing)
-10. [License](#license)
+
 
 ---
 
@@ -46,3 +40,31 @@ By implementing a **clean architecture**, the API separates **domain logic** fro
 - **Architecture & Scalability**
   - Modular, clean architecture with separation of concerns
   - Easy to maintain and extend
+
+## Project Structure
+.
+├── .git
+├── node_modules
+├── src
+│   ├── core
+│   │   ├── entities
+│   │   ├── errors
+│   │   ├── events
+│   │   ├── repositories
+│   │   ├── services
+│   │   ├── shared
+│   │   ├── types
+│   │   ├── either.spec.ts
+│   │   └── either.ts
+│   └── domain
+│       ├── delivery
+│       ├── notification
+│       └── user
+├── test
+├── .eslintrc.json
+├── .gitignore
+├── package.json
+├── pnpm-lock.yaml
+├── README.md
+├── tsconfig.json
+└── vite.config.mts
