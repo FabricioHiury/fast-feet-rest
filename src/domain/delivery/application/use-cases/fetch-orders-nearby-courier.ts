@@ -1,15 +1,15 @@
-import { Either, right } from '@/core/either'
-import { Order } from '../../enterprise/entities/order'
-import { PaginationParams } from '@/core/repositories/pagination-params'
-import { OrdersRepository } from '../repository/orders-repository'
+import { Either, right } from "@/core/either";
+import { Order } from "../../enterprise/entities/order";
+import { PaginationParams } from "@/core/repositories/pagination-params";
+import { OrdersRepository } from "../repository/orders-repository";
 
 interface FetchOrdersNearbyCourierRequest {
-  courierLatitude: number
-  courierLongitude: number
-  params: PaginationParams
+  courierLatitude: number;
+  courierLongitude: number;
+  params: PaginationParams;
 }
 
-type FetchOrdersNearbyCourierResponse = Either<null, { orders: Order[] }>
+type FetchOrdersNearbyCourierResponse = Either<null, { orders: Order[] }>;
 
 export class FetchOrdersNearbyCourierUseCase {
   constructor(private ordersRepository: OrdersRepository) {}
@@ -23,9 +23,9 @@ export class FetchOrdersNearbyCourierUseCase {
       { latitude: courierLatitude, longitude: courierLongitude },
       {
         page: params.page,
-      },
-    )
+      }
+    );
 
-    return right({ orders })
+    return right({ orders });
   }
 }
