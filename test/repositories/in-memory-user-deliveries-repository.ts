@@ -25,10 +25,6 @@ export class InMemoryUserDeliveriesRepository
     }
   }
 
-  // async findByCpf(cpf: CPF, ): Promise<UserDelivery[]> {
-  //   return this.items.filter((item) => item.cpf.equals(cpf))
-  // }
-
   async findByCpf(
     cpf: CPF,
     { page }: PaginationParams,
